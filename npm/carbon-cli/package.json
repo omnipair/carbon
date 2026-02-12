@@ -1,0 +1,32 @@
+{
+  "name": "@omnipair/carbon-cli",
+  "version": "0.10.0",
+  "description": "Carbon CLI - Solana indexing framework for generating decoders and scaffolding projects",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Omnipair/carbon.git"
+  },
+  "bin": {
+    "carbon-cli": "bin/carbon-cli.js"
+  },
+  "scripts": {
+    "postinstall": "node install.js"
+  },
+  "keywords": [
+    "solana",
+    "carbon",
+    "indexer",
+    "decoder",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "bin/",
+    "install.js",
+    "package.json",
+    "README.md"
+  ]
+}
