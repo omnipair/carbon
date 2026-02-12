@@ -24,7 +24,7 @@
     "node": ">=16"
   },
   "files": [
-    "bin/",
+    "bin/carbon-cli.js",
     "install.js",
     "package.json",
     "README.md"

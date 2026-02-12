@@ -80,8 +80,12 @@ function download(url) {
 async function main() {
   const binaryPath = getBinaryPath();
 
-  // Skip download if binary already exists (e.g. CI caching)
+  // Skip download if binary already exists and is executable
   if (existsSync(binaryPath)) {
+    // Ensure execute permission even if binary was pre-existing
+    if (process.platform !== "win32") {
+      chmodSync(binaryPath, 0o755);
+    }
     console.log(`carbon-cli binary already exists at ${binaryPath}`);
     return;
   }
