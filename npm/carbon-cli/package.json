@@ -1,6 +1,6 @@
 {
   "name": "@omnipair/carbon-cli",
-  "version": "0.10.0",
+  "version": "1.0.1",
   "description": "Carbon CLI - Solana indexing framework for generating decoders and scaffolding projects",
   "license": "MIT",
   "repository": {
